@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1><strong>Práctica I</strong></h1>
+    <form action="script">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            Nombre <input type="text">
+            <br><br><br>
+            Eres socio?
+            <br><br><br>
+            <input type="radio" name="socio" id="si" value="s">
+            <label for="si">Si, soy socio</label>
+            <input type="radio" name="socio" id="no" value="n">
+            <label for="no">NO soy socio</label>
+            <br><br><br>
+            Email <input type="text">
+            <br><br><br>
+            Contraseña <input type="password">
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            Edad
+            <select name="edad" id="edad">
+                <option value="menor">Menor de 18</option>
+                <option value="mayor">Mayor de 18</option>
+            </select>
+            <br><br><br>
+            Selecciona la fecha y hora de la reserva:
+            <br><br><br>
+            <input type="datetime-local" name="fecha" id="date">
+            <input type="time" name="hora" id="time">
+            <br><br><br>
+            <textarea name="comentarios" id="comment" cols="30" rows="10">Comentarios</textarea>
+            <br><br><br>
+        </fieldset>
+        <br><br>
+        <input type="checkbox" name="condiciones" id="conditions">
+        Acepto las condiciones
+        <br><br>
+        <input type="submit" name="enviar" id="send">
+    </form>
+    <br><br><hr><br><br>
+
+    <h1><strong>Práctica II</strong></h1>
+    <fieldset>
+        Nombre <input type="text">
+        <br><br>
+        Apellidos <input type="text">
+        <br><br>
+        Email <input type="text">
+        <br><br>
+        Teléfono <input type="tel">
+        <br><br>
+        Campus
+        <select name="campus" id="campus">
+            <option value="Campus1">Lorem ipsum dolor sit amet</option>
+            <option value="Campus2">Lorem ipsum dolor sit amet</option>
+            <option value="Campus3">Lorem ipsum dolor sit amet</option>
+            <option value="Campus4">Lorem ipsum dolor sit amet</option>
+            <option value="Campus5">Lorem ipsum dolor sit amet</option>
+        </select>
+        <br><br>
+        <textarea name="mensaje" id="msg" cols="30" rows="10">Mensaje</textarea>
+        <br><br>
+        <input type="checkbox" name="Acepto" id="accept">
+        Acepto la política de privacidad.
+        <br><br>
+        <input type="submit" name="enviar" id="send">
+    </fieldset>
+</body>
+</html>
